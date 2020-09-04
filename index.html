@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PHP-AJAX-DISCHI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    <script id="template" type="text/x-handlebars-template">
+      <div class="single">
+          <img src={{poster}} alt="poster">
+          <h3>{{title}}</h3>
+          <span class="author">{{author}}</span>
+          <span class="year">{{year}}</span>
+      </div>
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="logo container">
+        <img src="https://i.kinja-img.com/gawker-media/image/upload/s--ypN6iH9q--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/zrarqnhmkoaihvzss5ek.jpg" alt="">
+      </div>
+    </header>
+
+    <div id="wall-music" class="wall-music container"></div>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
